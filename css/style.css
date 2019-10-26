@@ -181,6 +181,20 @@ a {
     width: 100%;
   }
 }
+a,
+img {
+  -webkit-touch-callout: none;
+  cursor: default !important;
+}
+html,
+body {
+  -webkit-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default !important;
+}
 #container {
   position: relative;
   min-height: 100%;
