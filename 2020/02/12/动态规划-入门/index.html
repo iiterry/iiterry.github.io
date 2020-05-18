@@ -1,133 +1,218 @@
 <!DOCTYPE html>
-<html lang=en>
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="keywords" content="">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
   
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    动态规划-入门 |
     
-  <title>动态规划-入门 | Terry</title>
-  <meta name="description" content="">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/lib/jquery.fancybox.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    Terry</title>
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+  
+  <script src="/js/pace.min.js"></script>
 </head>
 
 <body>
-  <header>
-  <div class="header-container">
-    <a class='logo' href="/">
-      <span>Terry</span>
-    </a>
-    <ul class="right-header">
-      
-    </ul>
-  </div>
-</header>
+<main class="content">
+  <section class="outer">
+  
 
-  <main id='post'>
-  <div class="content">
-    <article>
-      <section class="content markdown-body">
-        <h1>
-          动态规划-入门
-        </h1>
-        <div class='post-meta'>
-          <i class="fa fa-calendar"
-            aria-hidden="true"></i> <time>
-            2020/02/12</time>
-          
-          
-        </div>
+<article id="post-动态规划-入门" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      动态规划-入门
+    </h1>
+  
+  
+
+
+
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2020/02/12/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E5%85%A5%E9%97%A8/" class="article-date">
+  <time datetime="2020-02-12T12:34:51.610Z" itemprop="datePublished">2020-02-12</time>
+</a>
+        
+      </div>
+    
+
+    
+      
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
         <h1 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> dp[状态表示]</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">dfs</span><span class="params">(状态表示)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(决策边界) <span class="keyword">return</span> 决策边界答案;</span><br><span class="line">	<span class="keyword">if</span>(dp[状态表示] != 无效数值) <span class="keyword">return</span> dp[状态表示];</span><br><span class="line">	<span class="keyword">for</span>(当前状态的子状态 子状态) dfs(子状态)  更新 dp[状态表示];</span><br><span class="line">	<span class="keyword">return</span> [状态表示];</span><br><span class="line">&#125;	</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">memset</span>(dp,无效数值, <span class="keyword">sizeof</span>(dp));</span><br><span class="line">    <span class="keyword">return</span> dfs(原始状态问题);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>解决动态规划常见模板.</p>
 
-      </section>
-    </article>
-    
-    
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/12/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E5%85%A5%E9%97%A8/" data-id="ckacfir0u0001s4dg6x91fpkk"
+         class="article-share-link">Share</a>
+      
+    </footer>
+
   </div>
-  <aside>
+
+  
     
-    <div class="toc-container">
-      <h1>
-        catalog
-      </h1>
-      <div class="content">
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#动态规划"><span class="toc-number">1.</span> <span class="toc-text">动态规划</span></a></li></ol>
-      </div>
-    </div>
+  <nav class="article-nav">
     
-  </aside>
-</main>
+    
+      <a href="/2020/02/01/spring/" class="article-nav-link">
+        <strong class="article-nav-caption">Olde posts</strong>
+        <div class="article-nav-title">spring</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
 
 
 
-  <footer>
-  <div class="copyright">
-    <div>
-      &copy;
-      2020 | Powered by <a href="https://hexo.io"
-        target="_blank">Hexo</a>&nbsp
+</section>
+  <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+    <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+    <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
     </div>
-    <div>
-      Theme by <a href="https://github.com/lewis-geek/hexo-theme-Aath"
-        target="_blank">Aath</a>
-    </div>
+    <ul class="list-inline">
+      <li>&copy; 2020 Terry</li>
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>Theme  <a href="https://github.com/zhwangart/hexo-theme-ocean" target="_blank" rel="noopener">Ocean</a></li>
+    </ul>
   </div>
 </footer>
 
+</main>
 
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="/lib/ScrollMagic.min.js"></script>
-<script src="/lib/lodash.min.js"></script>
-<script>
-  document.body.addEventListener('touchstart', function () { });
+<aside class="sidebar sidebar-specter">
+  
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+    <div class="logo">
+      <a href="/"><img src="/images/hexo.svg" alt="Terry"></a>
+    </div>
+  
+  <ul class="nav nav-main">
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/">Home</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/archives">Archives</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/gallery">Gallery</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/about">About</a>
+      </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+        <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+          <i class="fe fe-feed"></i>
+        </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/lazyload.min.js"></script>
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
 
-  // 文章图片预览
-  $("article img").each(function () {
-    var strA = "<a data-fancybox='gallery' href='" + this.src + "'></a>";
-    $(this).wrapAll(strA);
-  });
+  <script src="/fancybox/jquery.fancybox.min.js"></script>
 
-  // 目录联动
-  let tocLinkList = $('.toc-link')
 
-  let controller = new ScrollMagic.Controller({
-    globalSceneOptions: {
-      triggerHook: 0.01
-    }
-  })
 
-  tocLinkList.each(function (index, elem) {
-    let href = $(this).attr("href");
-    let nextHref = tocLinkList.eq(index + 1).attr("href");
-    let height = href && nextHref ? $(nextHref).offset().top - $(href).offset().top : 0
+  <script src="/js/tocbot.min.js"></script>
+  <script>
+    // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+    tocbot.init({
+      tocSelector: '.tocbot',
+      contentSelector: '.article-entry',
+      headingSelector: 'h1, h2, h3, h4, h5, h6',
+      hasInnerContainers: true,
+      scrollSmooth: true,
+      positionFixedSelector: '.tocbot',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  </script>
 
-    new ScrollMagic.Scene({ triggerElement: href })
-      .duration(height)
-      .setClassToggle(".toc [href='" + href + "']", 'active')
-      .addTo(controller)
-  })
 
-  window.addEventListener('load', function () {
-    // 目录联动 图片加载完成后从新计算
-    tocLinkList.each(function (index, elem) {
-      let href = $(this).attr("href");
-      let nextHref = tocLinkList.eq(index + 1).attr("href");
-      let height = href && nextHref ? $(nextHref).offset().top - $(href).offset().top : 0
-
-      new ScrollMagic.Scene({ triggerElement: href })
-        .duration(height)
-        .setClassToggle(".toc [href='" + href + "']", 'active')
-        .addTo(controller)
-    })
-  })
-</script>
-<script src="/lib/jquery.fancybox.min.js"></script>
-
+<script src="/js/ocean.js"></script>
 
 </body>
 </html>

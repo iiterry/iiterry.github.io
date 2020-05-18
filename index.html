@@ -1,179 +1,501 @@
 <!DOCTYPE html>
-<html lang=en>
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="keywords" content="">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
   
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
     
-  <title>Terry</title>
-  <meta name="description" content="">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/lib/jquery.fancybox.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    Terry</title>
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+  
+  <script src="/js/pace.min.js"></script>
 </head>
 
 <body>
-  <header>
-  <div class="header-container">
-    <a class='logo' href="/">
-      <span>Terry</span>
-    </a>
-    <ul class="right-header">
-      
-    </ul>
-  </div>
-</header>
-
-  <main id='index'>
-  <div class="posts-list">
+<main class="content">
+  <section class="jumbotron">
+  <div class="video">
     
-    <section>
-      <a href="/2020/02/12/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E5%85%A5%E9%97%A8/">
-        <h3 class='post-head'>
-          动态规划-入门
-        </h3>
-      </a>
+      <div class="video-frame">
+        <img src="/images/ocean/overlay-hero.png" alt="Decorative image frame">
+      </div>
+    
+    <div class="video-media">
+      <video playsinline="" autoplay="" loop="" muted="" data-autoplay=""
+             poster="/images/ocean/ocean.png" x5-video-player-type="h5">
+        <source src="/images/ocean/ocean.mp4" type="video/mp4">
+        <source src="/images/ocean/ocean.ogv" type="video/ogg">
+        <source src="/images/ocean/ocean.webm" type="video/webm">
+        <p>Your user agent does not support the HTML5 Video element.</p>
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+    <div class="video-inner text-center text-white">
+      <h1><a href="/">Terry</a></h1>
+      <p></p>
+      <div><img src="/images/hexo-inverted.svg" class="brand" alt="Terry"></div>
+    </div>
+    <div class="video-learn-more">
+      <a class="anchor" href="#landingpage"><i class="fe fe-mouse"></i></a>
+    </div>
+  </div>
+</section>
+
+<div id="landingpage">
+  <section class="outer">
+  <article class="articles">
+    
+    <h1 class="page-type-title"></h1>
+
+    
       
-      <div class="post-content">
         
+
+<article id="post-动态规划-入门" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
+  <div class="article-inner">
+    
+      <header class="article-header">
         
+  
+    <h2 itemprop="name">
+      <a class="article-title" href="/2020/02/12/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E5%85%A5%E9%97%A8/">动态规划-入门</a>
+    </h2>
+  
+  
+
+
+
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2020/02/12/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E5%85%A5%E9%97%A8/" class="article-date">
+  <time datetime="2020-02-12T12:34:51.610Z" itemprop="datePublished">2020-02-12</time>
+</a>
         
+      </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
         <h1 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> dp[状态表示]</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">dfs</span><span class="params">(状态表示)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(决策边界) <span class="keyword">return</span> 决策边界答案;</span><br><span class="line">	<span class="keyword">if</span>(dp[状态表示] != 无效数值) <span class="keyword">return</span> dp[状态表示];</span><br><span class="line">	<span class="keyword">for</span>(当前状态的子状态 子状态) dfs(子状态)  更新 dp[状态表示];</span><br><span class="line">	<span class="keyword">return</span> [状态表示];</span><br><span class="line">&#125;	</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">memset</span>(dp,无效数值, <span class="keyword">sizeof</span>(dp));</span><br><span class="line">    <span class="keyword">return</span> dfs(原始状态问题);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-        
-        
-      </div>
-      <div class='post-meta'>
-        <i class="fa fa-calendar"
-          aria-hidden="true"></i> <time>
-          2020/02/12</time>
-        
-        
-      </div>
-    </section>
-    
-    <section>
-      <a href="/2020/02/01/spring/">
-        <h3 class='post-head'>
-          spring
-        </h3>
-      </a>
+
+<p>解决动态规划常见模板.</p>
+
       
-      <div class="post-content">
-        
-        
-        
-        <p>Spring 最重要的两个特性就是 ID和AOP</p>
-        
-        
-      </div>
-      <div class='post-meta'>
-        <i class="fa fa-calendar"
-          aria-hidden="true"></i> <time>
-          2020/02/01</time>
-        
-        
-      </div>
-    </section>
-    
-    <section>
-      <a href="/2019/10/31/%E8%8B%9E%E7%B1%B3-%E8%BF%9E%E8%BD%BD/">
-        <h3 class='post-head'>
-          苞米(连载)
-        </h3>
-      </a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/12/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E5%85%A5%E9%97%A8/" data-id="ckacfir0u0001s4dg6x91fpkk"
+         class="article-share-link">Share</a>
       
-      <div class="post-content">
-        
-        
-        
-        <h4 id="玉米"><a href="#玉米" class="headerlink" title="玉米"></a>玉米</h4><p>​      那是油亮油亮的玉米。上面还挂着一些灰尘。要用自己的手把玉米棒玉米棒扭下来。</p>
-        
-        
-      </div>
-      <div class='post-meta'>
-        <i class="fa fa-calendar"
-          aria-hidden="true"></i> <time>
-          2019/10/31</time>
-        
-        
-      </div>
-    </section>
-    
-    <section>
-      <a href="/2019/10/26/%E8%8B%B1%E6%96%87%E8%AF%8D%E6%B1%87%E6%96%B0%E5%BC%8F%E7%BF%BB%E8%AF%91/">
-        <h3 class='post-head'>
-          英文词汇新式翻译
-        </h3>
-      </a>
-      
-      <div class="post-content">
-        
-        
-        
-        <h2 id="学习英语"><a href="#学习英语" class="headerlink" title="学习英语"></a>学习英语</h2><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>讨论学习英语,应该是俞敏洪那个时候的事,虽然英语学习并没有从前那么疯狂,但是目前英语学习市场仍然十分庞大.说起这些并不是我想做一些培训机构来做英语,是因为我自己是一个英语学习者,自己觉得走了很多弯路.但是现在我好像找到了一个翻译的好办法,现在还没有命名,暂时简称赵氏翻译法吧(好像是太土了).</p>
-        
-        
-      </div>
-      <div class='post-meta'>
-        <i class="fa fa-calendar"
-          aria-hidden="true"></i> <time>
-          2019/10/26</time>
-        
-        
-      </div>
-    </section>
-    
-    <section>
-      <a href="/2019/10/24/%E8%A5%BF%E6%96%B9%E4%BA%BA%E5%90%8D%E5%AD%97%E6%84%8F%E8%AF%91%E4%B8%AD%E6%96%87%E5%90%8D/">
-        <h3 class='post-head'>
-          西方人名字意译中文名
-        </h3>
-      </a>
-      
-      <div class="post-content">
-        
-        
-        
-        <p>这是一个开源项目，目标是把西方人的名字意译为中文名。</p>
-        
-        
-      </div>
-      <div class='post-meta'>
-        <i class="fa fa-calendar"
-          aria-hidden="true"></i> <time>
-          2019/10/24</time>
-        
-        
-      </div>
-    </section>
-    
+    </footer>
+
   </div>
-  <aside>
-    
-    
-    
-    
-  </aside>
-</main>
+
+  
+
+  
+
+</article>
 
 
-  <footer>
-  <div class="copyright">
-    <div>
-      &copy;
-      2020 | Powered by <a href="https://hexo.io"
-        target="_blank">Hexo</a>&nbsp
+
+      
+        
+
+<article id="post-spring" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title" href="/2020/02/01/spring/">spring</a>
+    </h2>
+  
+  
+
+
+
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2020/02/01/spring/" class="article-date">
+  <time datetime="2020-02-01T01:46:11.443Z" itemprop="datePublished">2020-02-01</time>
+</a>
+        
+      </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+        <p>Spring 最重要的两个特性就是 ID和AOP</p>
+
+      
     </div>
-    <div>
-      Theme by <a href="https://github.com/lewis-geek/hexo-theme-Aath"
-        target="_blank">Aath</a>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/01/spring/" data-id="ckacfir0l0000s4dgewkfb55r"
+         class="article-share-link">Share</a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+
+
+
+      
+        
+
+<article id="post-苞米-连载" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title" href="/2019/10/31/%E8%8B%9E%E7%B1%B3-%E8%BF%9E%E8%BD%BD/">苞米(连载)</a>
+    </h2>
+  
+  
+
+
+
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2019/10/31/%E8%8B%9E%E7%B1%B3-%E8%BF%9E%E8%BD%BD/" class="article-date">
+  <time datetime="2019-10-31T14:49:49.000Z" itemprop="datePublished">2019-10-31</time>
+</a>
+        
+      </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+        <h4 id="玉米"><a href="#玉米" class="headerlink" title="玉米"></a>玉米</h4><p>​      那是油亮油亮的玉米。上面还挂着一些灰尘。要用自己的手把玉米棒玉米棒扭下来。</p>
+<p>​      那年我刚失业，回到家里面干农活。想起来已经四年十一假期没回家了。感觉回家父母老了很多。突突突，父亲开着拖拉机回来了。很明显父亲是很高兴儿子回来的，语言没表达，行动没表达，但是眼睛不会骗人。父亲眼睛里面闪着光。</p>
+<p>​      父亲告诉我我五大爷没了。农村总是论大爷排都能排到三四五，有的时候我甚至在想人一辈子最多能生多少孩子。极致的算法是女人十一二岁就来时生孩子，一直到女人功能完全丧失为止，这样的话应该有二十多个，但是算上怀孕之后要修养，就算一年半一个的话就是十多个。我对于对简单的加减法一直都不敏感，但是自从有一天从一个视频里面看到一个数学家说数学家对这些有的也不敏感就心里好受多了。</p>
+<p>​      “赶紧装车吧。”虽然木讷一句话，但是我却从里面读出来父亲平时干农活的没有的喜悦。我开始觉得装车没有匹苞米累，因为苞米杆中还没有完全干，扭下来的过程极其痛苦，要用户口作为杠杆支撑，这样力完全刺痛。</p>
+<p>​     “装苞米好像更轻松一点。”</p>
+<p>​     “装苞米一天两百二，劈苞米一天八十”，父亲脸上洋溢着微笑.恍惚之间像做梦一样,感觉好不真实.仿佛还是想小时候我问指着茄子的问爸爸这是什么的时候。这一刻我仿佛梦回十岁。突然我发现这一切都回不去了。</p>
+<p>​     我擅长观察身边事物，但是作为一个坚定的唯物主义者，我一直鉴定的相信事物的运行规律和人之间的为人处世没有必然联系，就像是铁杵磨成针和水滴石穿和做人坚持就能成功没有必然关系。人们总是相信自己相信的，并不关心自己看到的。自己相信的就是对的，这也许是人们的执念。有时候我甚至想着这应该就是宗教起源的理论基础。</p>
+<p>​      </p>
+<h4 id="656路"><a href="#656路" class="headerlink" title="656路"></a>656路</h4><p>​       对面656迎面过来，我以为会鸣笛致意，但是司机把手伸出窗外，脸上咧开半张脸的笑容，用手 指了指对面的     司机的表情逐渐僵硬，但是僵住 的表情上在自言自语，这大概就是孤独吧。</p>
+<p>   痛苦是人生的主题，所以追求快乐，要留下来什么 ，但是公务员追求什么呢.公务员的一生要为人民服务,心中装着人民群众.</p>
+<p>  今天看见一个小孩子,</p>
+
+      
     </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/31/%E8%8B%9E%E7%B1%B3-%E8%BF%9E%E8%BD%BD/" data-id="ckacfir0x0002s4dggkga3pte"
+         class="article-share-link">Share</a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+
+
+
+      
+        
+
+<article id="post-英文词汇新式翻译" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title" href="/2019/10/26/%E8%8B%B1%E6%96%87%E8%AF%8D%E6%B1%87%E6%96%B0%E5%BC%8F%E7%BF%BB%E8%AF%91/">英文词汇新式翻译</a>
+    </h2>
+  
+  
+
+
+
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2019/10/26/%E8%8B%B1%E6%96%87%E8%AF%8D%E6%B1%87%E6%96%B0%E5%BC%8F%E7%BF%BB%E8%AF%91/" class="article-date">
+  <time datetime="2019-10-26T11:38:15.000Z" itemprop="datePublished">2019-10-26</time>
+</a>
+        
+      </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+        <h2 id="学习英语"><a href="#学习英语" class="headerlink" title="学习英语"></a>学习英语</h2><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>讨论学习英语,应该是俞敏洪那个时候的事,虽然英语学习并没有从前那么疯狂,但是目前英语学习市场仍然十分庞大.说起这些并不是我想做一些培训机构来做英语,是因为我自己是一个英语学习者,自己觉得走了很多弯路.但是现在我好像找到了一个翻译的好办法,现在还没有命名,暂时简称赵氏翻译法吧(好像是太土了).</p>
+<h3 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h3><p>翻译的意思大概就是把一种语言转黄成另一种语言,在中国大陆地区,英文单个的单位成为”单词”,而在台湾地区,成为”单字”.将这些并没有什么好坏,但是我认为相对于单词来讲,单字的叫法更为准确.</p>
+<p>从语言的角度来看,我过古代一直使用的是古文,而清末改革之后我国就开始使用白话文,相对于古文来说,白话文的优势有很多.</p>
+<h3 id="引发思考"><a href="#引发思考" class="headerlink" title="引发思考"></a>引发思考</h3><p>改革之于革命的区别就是改革还存在从前的根基.现代白话文中将古文中大量的单字组成词语,在使用用大量模棱两可的意思变得更加具体,比如现代文中的”解”:</p>
+<p>“解”在现代白话中的意思为</p>
+<p><img src="C:%5CUsers%5CTerrt%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572091671706.png" alt="1572091671706"></p>
+<p>除非一些情况:</p>
+<p>1,约定俗成的</p>
+<p>2,一个字作为一个词用的</p>
+<p>其他的绝大多数情况,我们使用含义一般组成词语使用,比如:</p>
+<p>1,糖在水中溶解了.   —-溶解</p>
+<p>2,他把绳子解开了.   —-解开</p>
+<h2 id="reslove"><a href="#reslove" class="headerlink" title="reslove"></a>reslove</h2><p>我们也知道英语中的单词一般有很多种的意思,这里就是使用英文中的单词翻译成一个字比较妥当,但是由于中西方文化差异比较大,一个单词并不能完全对用一个汉字,只能对应一个汉字中的一部分意思.所以在我的翻译过程中,也会仔细的考察其中的意思.并列出参考的出处.</p>
+<p>本项目为开源项目,欢迎社会各界人士贡献力量,另外,本项目并非国家机构官方项目,翻译的结果和过程仅供学习使用.</p>
+<h3 id="set"><a href="#set" class="headerlink" title="set"></a>set</h3><h2 id="英文"><a href="#英文" class="headerlink" title="英文"></a>英文</h2><p>中文 :置</p>
+<hr>
+<p>sort</p>
+<p>归拢</p>
+<p>giant</p>
+<p>巨</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/26/%E8%8B%B1%E6%96%87%E8%AF%8D%E6%B1%87%E6%96%B0%E5%BC%8F%E7%BF%BB%E8%AF%91/" data-id="ckacfir100004s4dggspv0t2k"
+         class="article-share-link">Share</a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+
+
+
+      
+        
+
+<article id="post-西方人名字意译中文名" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title" href="/2019/10/24/%E8%A5%BF%E6%96%B9%E4%BA%BA%E5%90%8D%E5%AD%97%E6%84%8F%E8%AF%91%E4%B8%AD%E6%96%87%E5%90%8D/">西方人名字意译中文名</a>
+    </h2>
+  
+  
+
+
+
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2019/10/24/%E8%A5%BF%E6%96%B9%E4%BA%BA%E5%90%8D%E5%AD%97%E6%84%8F%E8%AF%91%E4%B8%AD%E6%96%87%E5%90%8D/" class="article-date">
+  <time datetime="2019-10-24T12:45:09.000Z" itemprop="datePublished">2019-10-24</time>
+</a>
+        
+      </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+        <p>这是一个开源项目，目标是把西方人的名字意译为中文名。</p>
+<h2 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h2><p>​    中国人起名字自古以来就有讲究，中国人相信好名字会带来好运。近现代以来，西方文化不断冲击着中国传统文化。现在小孩子也都知道一些包括 “Bob“，”Lisa“等西方人的名字，但是由于当时一些我现在还不知道的考虑（可能是名字数量巨大），传进来的英文名翻译成中文名字的方式一直都是音译。</p>
+<p>​    现在我呼吁发起将西方人的名字意译成中文名字的项目，想要的也非常简单，就是想将父母起名字的含义和对子女的殷切期望表达出来，另一方面，我自己是一个英语水平有限的学生，也希望在这个过程中，积极的了解西方文化，提高自己的英文水平。</p>
+<h2 id="翻译规则"><a href="#翻译规则" class="headerlink" title="翻译规则"></a>翻译规则</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">“信”“达”“雅”它是由我国清末新兴启蒙思想家严复提出的，他在《[天演论]中的“译例言”讲到：“译事三难：信、达、雅。求其信，已大难矣！顾信矣，不达，虽译，犹不译也，则达尚焉。</span><br><span class="line">“信”指意义不悖原文，即是译文要准确，不偏离，不遗漏，也不要随意增减意思；“达”指不拘泥于原文形式，译文通顺明白；“雅”则指译文时选用的词语要得体，追求文章本身的古雅，简明优雅。</span><br></pre></td></tr></table></figure>
+
+<p>​    本项目翻译过程也是在严复先生提出的翻译准则下进行。在我的翻译过程中应尽量尊重翻译的原意，在次基础上柔和中国传统文化，从而得出意译版本的中文名，当然本人中英文水平均有限，翻译结果并不作为官方翻译，如有侵权行为与我联系。</p>
+<p>Ex：</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">| 官方译名                |</span> 母语原名                            <span class="params">|  意译名称  |</span></span><br><span class="line"><span class="params">| 让·巴普蒂斯·约瑟夫·傅里叶 |</span> Baron Jean Baptiste Joseph Fourier<span class="params">|   乔四    |</span></span><br></pre></td></tr></table></figure>
+
+<p>傅里叶：</p>
+<p> Fourier   名称中含有 four 为 四，Jean 音译为 乔。综合过来为”乔四“</p>
+<p>注：国家的分类是按照现在的国籍。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/24/%E8%A5%BF%E6%96%B9%E4%BA%BA%E5%90%8D%E5%AD%97%E6%84%8F%E8%AF%91%E4%B8%AD%E6%96%87%E5%90%8D/" data-id="ckacfir0z0003s4dg8jb6bjcf"
+         class="article-share-link">Share</a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+
+
+
+      
+  </article>
+  
+
+  
+</section>
+</div>
+
+  <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+    <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+    <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>&copy; 2020 Terry</li>
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>Theme  <a href="https://github.com/zhwangart/hexo-theme-ocean" target="_blank" rel="noopener">Ocean</a></li>
+    </ul>
   </div>
 </footer>
 
+</main>
 
+  <aside class="sidebar">
+    
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+    <div class="logo">
+      <a href="/"><img src="/images/hexo.svg" alt="Terry"></a>
+    </div>
+  
+  <ul class="nav nav-main">
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/">Home</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/archives">Archives</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/gallery">Gallery</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/about">About</a>
+      </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+        <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+          <i class="fe fe-feed"></i>
+        </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/lazyload.min.js"></script>
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+  <script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/ocean.js"></script>
 
 </body>
 </html>
