@@ -23,7 +23,7 @@
     <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/fragment/css/style.css">
 
     <!-- Custom Fonts -->
     <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -57,7 +57,7 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 
                     <div class="post-preview">
-    <a href="/2020/02/12/动态规划-入门/">
+    <a href="/fragment/2020/02/12/动态规划-入门/">
         <h2 class="post-title">
             动态规划-入门
         </h2>
@@ -66,16 +66,16 @@
 </div>
                 
                     <div class="post-preview">
-    <a href="/2020/02/01/spring/">
+    <a href="/fragment/2020/02/01/spring/">
         <h2 class="post-title">
-            spring
+            标题
         </h2>
-        
+        <p>预览</p>
     </a>
 </div>
                 
                     <div class="post-preview">
-    <a href="/2019/10/31/苞米-连载/">
+    <a href="/fragment/2019/10/31/苞米-连载/">
         <h2 class="post-title">
             苞米(连载)
         </h2>
@@ -84,7 +84,7 @@
 </div>
                 
                     <div class="post-preview">
-    <a href="/2019/10/26/英文词汇新式翻译/">
+    <a href="/fragment/2019/10/26/英文词汇新式翻译/">
         <h2 class="post-title">
             英文词汇新式翻译
         </h2>
@@ -93,7 +93,7 @@
 </div>
                 
                     <div class="post-preview">
-    <a href="/2019/10/24/西方人名字意译中文名/">
+    <a href="/fragment/2019/10/24/西方人名字意译中文名/">
         <h2 class="post-title">
             西方人名字意译中文名
         </h2>
@@ -245,7 +245,7 @@
       };
     
       // use atom.xml to search blog
-      searchFunc("/atom.xml", "local-search-input", "local-search-result");
+      searchFunc("/fragment/atom.xml", "local-search-input", "local-search-result");
       $("#searchModalCenter").on("shown.bs.modal", function(e) {
         setTimeout(function() {
           $("#local-search-input").focus();
@@ -267,6 +267,21 @@
 
     <!-- Service Worker -->
     <!-- if using service worker -->
+
+    <script text="module">
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then(function() {
+            console.log("A new service worker is being installed.");
+          })
+          .catch(function(error) {
+            console.log("Service worker registration failed:", error);
+          });
+      } else {
+        console.log("Service workers are not supported.");
+      }
+    </script>
 
     
 </body>

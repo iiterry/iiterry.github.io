@@ -23,7 +23,7 @@
     <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/fragment/css/style.css">
 
     <!-- Custom Fonts -->
     <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -49,7 +49,7 @@
     
 
 <!-- Back Home -->
-<a class="nav-back" href="/">
+<a class="nav-back" href="/fragment/">
     <i class="fa fa-puzzle-piece"></i>
 </a>
 
@@ -72,7 +72,7 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             
                 <div class="post-preview archive">
-    <a href="/2020/02/12/动态规划-入门/">
+    <a href="/fragment/2020/02/12/动态规划-入门/">
         <h1 class="post-title archive">
             动态规划-入门
         </h1>
@@ -81,9 +81,9 @@
  
             
                 <div class="post-preview archive">
-    <a href="/2020/02/01/spring/">
+    <a href="/fragment/2020/02/01/spring/">
         <h1 class="post-title archive">
-            spring
+            标题
         </h1>
     </a>
 </div>
@@ -108,6 +108,21 @@
 
     <!-- Service Worker -->
     <!-- if using service worker -->
+
+    <script text="module">
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then(function() {
+            console.log("A new service worker is being installed.");
+          })
+          .catch(function(error) {
+            console.log("Service worker registration failed:", error);
+          });
+      } else {
+        console.log("Service workers are not supported.");
+      }
+    </script>
 
     
 </body>

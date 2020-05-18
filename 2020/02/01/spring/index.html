@@ -9,7 +9,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="Spring 最重要的两个特性就是 ID和AOP">
+        <meta name="description" content="预览">
     
 
     <!--Author-->
@@ -19,13 +19,13 @@
 
     <!-- Title -->
     
-    <title>spring | Terry</title>
+    <title>标题 | Terry</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/fragment/css/style.css">
 
     <!-- Custom Fonts -->
     <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -50,7 +50,7 @@
     <!-- Content -->
     <section class="article-container">
     <!-- Back Home -->
-    <a class="nav-back" href="/">
+    <a class="nav-back" href="/fragment/">
     <i class="fa fa-puzzle-piece"></i>
 </a>
 
@@ -61,7 +61,7 @@
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <div class="post-heading">
                             <h1>
-                                spring
+                                标题
                             </h1>
                         </div>
                     </div>
@@ -75,7 +75,11 @@
                 <div class="row">
                     <!-- Post Main Content -->
                     <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p>Spring 最重要的两个特性就是 ID和AOP</p>
+                        <p>预览</p>
+<a id="more"></a>
+
+<p>aop</p>
+<p>ioc</p>
 
 
                             <!-- Meta -->
@@ -84,6 +88,11 @@
                                 <br>
                                 <div class="post-tags">
                                     
+                                                
+
+<a href="/fragment/categories/技术/"><技术></a>
+
+                                                    
                                 </div>
                                 <div class="post-date">
                                     2020-02-01
@@ -95,6 +104,19 @@
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <!-- Disqus Comments -->
 
+<div id="disqus_thread" class="comment"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES * * */
+  var disqus_shortname = 'true';
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
 
                     </div>
                 </div>
@@ -105,9 +127,9 @@
 <!-- Image viewer-->
 
     <!-- Custom picture view-->
-    <link href="/css/viewer.min.css" rel="stylesheet" />
+    <link href="/fragment/css/viewer.min.css" rel="stylesheet" />
     <script
-      src="/js/viewer.min.js"
+      src="/fragment/js/viewer.min.js"
       type="text/javascript"
       charset="utf-8"
     ></script>
@@ -141,6 +163,21 @@
 
     <!-- Service Worker -->
     <!-- if using service worker -->
+
+    <script text="module">
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then(function() {
+            console.log("A new service worker is being installed.");
+          })
+          .catch(function(error) {
+            console.log("Service worker registration failed:", error);
+          });
+      } else {
+        console.log("Service workers are not supported.");
+      }
+    </script>
 
     
 </body>
